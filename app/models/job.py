@@ -1,3 +1,4 @@
+import uuid
 from datetime import datetime
 from sqlalchemy import String, Integer, DateTime, ForeignKey
 from sqlalchemy.orm import Mapped, mapped_column, relationship
@@ -38,4 +39,3 @@ class Job(Base, TimestampMixin):
     )
 
     task: Mapped["Task"] = relationship("Task", back_populates="job")
-    

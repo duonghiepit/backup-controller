@@ -11,7 +11,7 @@ class Settings(BaseSettings):
     # --- App ---
     APP_NAME: str = "Backup Controller"
     DEBUG: bool = False
-    API_V!_PREFIX: str = "/api/v1"
+    API_V1_PREFIX: str = "/api/v1"
 
     # --- Database ---
     DATABASE_URL: str
